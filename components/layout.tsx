@@ -1,16 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import React from 'react';
+import Image from 'next/image';
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
+import Head from 'next/head';
 
 type LayoutProps = {
-    children: React.ReactNode;
-    home?: boolean;
-}
+  children: React.ReactNode;
+  home?: boolean;
+};
 
-const name = 'Cheeky Joe'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Cheeky Joe';
+export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home }: LayoutProps) {
   return (
@@ -74,5 +75,5 @@ export default function Layout({ children, home }: LayoutProps) {
         </div>
       )}
     </div>
-  )
+  );
 }
